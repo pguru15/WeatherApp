@@ -1,0 +1,13 @@
+<section class="weather-search">
+    <div>
+        <label>Enter City Name:</label>
+        <input [(ngModel)]="location" type="text" value="Enter Valid City Name" required onFocus="this.value=''">
+    </div>
+    <div class="btn-area">
+        <button (click)="onSubmit()">Search</button>
+        <button (click)="onClear()">Clear</button>
+    </div>
+    <!-- <div>
+        <span class="info">City Found:</span>City Name
+    </div> -->
+</section>
